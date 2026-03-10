@@ -1,0 +1,18 @@
+{
+  "name": "xrynze-bot",
+  "version": "1.0.0",
+  "description": "Telegram Bot untuk Cloudflare Workers + D1",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init": "wrangler d1 execute xrynze-db --file=schema.sql"
+  },
+  "keywords": ["telegram", "bot", "cloudflare", "workers", "d1"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
